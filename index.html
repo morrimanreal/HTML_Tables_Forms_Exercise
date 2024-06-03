@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tables and Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        background-color: #333;
+        color: #eee;
+      }
+    </style>
   </head>
   <body>
     <main>
       <!-- Complete the Exercises HERE -->
+      <h1>DRINKS NUTRITIONAL FACTS</h1>
       <table>
         <thead>
           <tr>
@@ -70,21 +78,31 @@
       </table>
 
       <form>
-        <label for="drink">Drink</label><br />
-        <input type="text" id="drink" name="drink" /><br />
-        <label for="totalServings">Total Servings</label><br />
-        <input type="text" id="totalServings" name="totalServings" /><br />
-        <label for="servingSize">Serving size</label><br />
-        <input type="text" id="servingSize" name="servingSize" /><br />
-        <label for="caloriesPerServing">Calories per serving</label><br />
-        <input type="text" id="caloriesPerServing" name="caloriesPerServing" /><br />
-        <label for="carbsPerServing">Carbs per serving</label><br />
-        <input type="text" id="carbsPerServing" name="carbsPerServing" /><br />
-        <label for="sugarsPerServing">Sugars per serving</label><br />
-        <input type="text" id="sugarsPerServing" name="sugarsPerServing" /><br />
-        <label for="sodiumPerServing">Sodium per serving</label><br />
-        <input type="text" id="sodiumPerServing" name="sodiumPerServing" /><br />
-        <button type="submit">SUBMIT</button>
+        <fieldset>
+          <legend>Input drink info</legend>
+          <label for="drink">Drink</label><br />
+          <input type="text" id="drink" name="drink" /><br />
+        
+          <label for="totalServings">Total Servings</ label><br />
+          <input type="text" id="totalServings"   name="totalServings" /><br />
+        
+          <label for="servingSize">Serving size</label><br />
+          <input type="text" id="servingSize"   name="servingSize" /><br />
+        
+          <label for="caloriesPerServing">Calories per  serving</label><br />
+          <input type="text" id="caloriesPerServing"  name="caloriesPerServing" /><br />
+        
+          <label for="carbsPerServing">Carbs per serving</  label><br />
+          <input type="text" id="carbsPerServing"   name="carbsPerServing" /><br />
+        
+          <label for="sugarsPerServing">Sugars per serving</  label><br />
+          <input type="text" id="sugarsPerServing"  name="sugarsPerServing" /><br />
+        
+          <label for="sodiumPerServing">Sodium per serving</  label><br />
+          <input type="text" id="sodiumPerServing"  name="sodiumPerServing" /><br />
+          <button type="submit">SUBMIT</button> 
+        <!-- //default type to submit so no need to create type=submit -->
+        </fieldset>
       </form>
 
     </main>
